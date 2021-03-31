@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container">
+        <div class="row border border-primary">
+            <div class="col-12">   
+                <h1>Análisis de Catación</h1>
+            </div>
+        </div>
+        <div class="row border border-primary">
+            <div class="col-12">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Muestra recibida en:</label>
+                        <select id="disabledSelect" class="form-select">
+                            <option value="">café pergamino de primera</option>
+                            <option value="">café pergamino de segunda</option>
+                            <option value="">café pergamino natas</option>
+                            <option value="">café cereza maduro seco</option>
+                            <option value="">café cereza verde seco</option>
+                            <option value="">café honey amarillo</option>
+                            <option value="">café honey rojo</option>
+                            <option value="">café honey negro</option>
+                            <option value="">café oro de primera</option>
+                            <option value="">café oro de segunda</option>
+                            <option value="">café oro de subproductos</option>
+                        </select>
+                      </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Cosecha</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Fecha</label>
+                                <input type="datetime-local" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Correlativo</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Empresa</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Centro de Producción</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 col-6">
+                                    <label for="input" class="form-label">Código</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="input" class="form-label">Lote</label>
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Productor</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Quintales</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input" class="form-label">Bultos</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="row">
+                <h4>Oro Verde</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="" class="form-label">Apariencia</label>
+                            <select id="disabledSelect" class="form-select">
+                                <option value="">Excelente</option>
+                                <option value="">Buena</option>
+                                <option value="">Regular</option>
+                                <option value="">Mala</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="" class="form-label">Color</label>
+                            <select id="disabledSelect" class="form-select">
+                                <option value="">Verde Azulado Jiotoso</option>
+                                <option value="">Verde Esmeralda</option>
+                                <option value="">Verde Esmeralda Jiotoso</option>
+                                <option value="">Verde Esmeralda Rojizo</option>
+                                <option value="">Verde Pálido</option>
+                                <option value="">Verde Pálido Jiotoso</option>
+                                <option value="">Verde Pálido Demasiado Jiotoso</option>
+                                <option value="">Verde Amarillento Atabacado</option>
+                                <option value="">Verde Amarilleto Pálido</option>
+                                <option value="">Verde Amarilleto Añejado</option>
+                                <option value="">Verde Blanqueado Grisaseo</option>
+                                <option value="">Verde Anaturalado</option>
+                                <option value="">Verde Honey Amarillo</option>
+                                <option value="">Verde Honey Rojo</option>
+                                <option value="">Verde Honey Negro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="" class="form-label">Tamaño</label>
+                            <select id="disabledSelect" class="form-select">
+                                <option value="">Extra Grande Parejo Maragogipe</option>
+                                <option value="">Extra Grande Parejo Pacamara</option>
+                                <option value="">Extra Grande Disparejo Maragopipe</option>
+                                <option value="">Extra Grande Disparejo Pacamara</option>
+                                <option value="">Grande Parejo</option>
+                                <option value="">Grande Disparejo</option>
+                                <option value="">Mediano Parejo</option>
+                                <option value="">Mediano Disparejo</option>
+                                <option value="">Pequeño Parejo</option>
+                                <option value="">Pequeño Disparejo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="" class="form-label">Humedad</label>
+                            <select name="" id="disabledSelect" class="form-select">
+                                <option value="">13,0% muy húmedo "No Aceptable"</option>
+                                <option value="">12,75% muy húmedo "No Aceptable"</option>
+                                <option value="">12,5% ligeramente húmedo "Riesgoso"</option>
+                                <option value="">12,25% ligeramente húmedo "Aceptable"</option>
+                                <option value="">12,0% óptimo "Aceptable"</option>
+                                <option value="">11,75% óptimo "Aceptable"</option>
+                                <option value="">11,5% normal "Aceptable"</option>
+                                <option value="">11,25% "Aceptable"</option>
+                                <option value="">11,0% normal "Aceptable"</option>
+                                <option value="">10,75% normal "Aceptable"</option>
+                                <option value="">10,5% ligeramente reseco "Aceptable"</option>
+                                <option value="">10,25% ligeramente reseco "Aceptable"</option>
+                                <option value="">10,0% reseco "Aceptable"</option>
+                                <option value="">9,75% reseco "Riesgoso"</option>
+                                <option value="">9,5% demasiado reseco "No Aceptable"</option>
+                                <option value="">9,0% demasiado reseco "No Aceptable"</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="" class="form-label">Actividad de Agua</label>
+                            <input type="number" class="form-control">
+                        </div>
+    
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row border border-primary">
+            <h4>Conversión</h4>
+            <form action="">
+                <div class="row">
+                    <div class="mb-3 col-3">
+                        <label for="" class="form-label">Materia Prima</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="" class="form-label">Oro Limpio</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="" class="form-label">% subproductos</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="mb-3 col-3">
+                        <label for="" class="form-label">Oro Trillado</label>
+                        <input type="number" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Bruta</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Neta</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Cascabillo</label>
+                        <input type="number" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row border border-secondary">
+            <h4>Tueste</h4>
+            <form action="">
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Apariencia</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Parejo
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Disparejo
+                            </label>
+                          </div>
+                      </div>
+                      <div class="mb-3 col-4">
+                        <label for="" class="form-label">Hendidura</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Abierto
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Cerrado
+                            </label>
+                          </div>
+                      </div>
+                      <div class="mb-3 col-4">
+                        <label for="" class="form-label">Textura</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Corrugado
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Lisa
+                            </label>
+                          </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Agtron</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Relación</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="" class="form-label">Tiempo</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row border border-primary">
+            <h4>Perfil del Sabor</h4>
+            <div class="row">
+                <form action="">
+                    <label>Tipo</label>
+                    <select name="" class="form-control" id="">
+                        <option value="">SHB Antigua</option>
+                        <option value="">SHB Atitlan</option>
+                        <option value="">SHB Acatenango</option>
+                        <option value="">SHB Coban</option>
+                        <option value="">SHB Fraijanes</option>
+                        <option value="">SHB Huehuetenango</option>
+                        <option value="">SHB Santa Rosa</option>
+                        <option value="">SHB Chorti</option>
+                        <option value="">SHB San Marcos</option>
+                        <option value="">SHB - Estrictamente Duro</option>
+                        <option value="">Fancy Hard - Duro de Fantasía</option>
+                        <option value="">HB - Duro</option>
+                        <option value="">SH - Semi Duro</option>
+                        <option value="">XPW - Extra Prima Lavado</option>
+                        <option value="">PW - Prima Lavado</option>
+                        <option value="">Robusta Lavado</option>
+                        <option value="">Robusta Natural</option>
+                        <option value="">Natural de Maduro</option>
+                        <option value="">Natural de Verde</option>
+                        <option value="">Natural Mezclado</option>
+                        <option value="">Stock Lot</option>
+                    </select>
+                    <label>Preparación</label>
+                    <select name="" class="form-control" id="">
+                        <option value="">Superior</option>
+                        <option value="">Asíatica</option>
+                        <option value="">Especial</option>
+                        <option value="">Europea</option>
+                        <option value="">Americana</option>
+                        <option value="">Stock Lot</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Fragancia / Aroma</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Acidez</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Cuerpo</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Sabor</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Post Gusto</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Uniformidad</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Nota Global</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Balance</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Dulzura</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Limpieza</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" class="form-check-input">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                              Ligero
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                              Fuerte
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <h4>Atributos</h4>
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="">Marcados</label>
+                                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="">Tenues</label>
+                                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row border border-primary">
+            <h4>Defectos por Categoría</h4>
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Negro Total</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Podrido Total</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Cereza</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Daño por Hongo</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Pergaminos</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Daño por Insecto</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Materia Extraña</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Negro Parcial</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Podrido Parcial</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Quebrados</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Conchas</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Mordidos</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Quemados</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Arqueñados</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Daño Leve de Insecto</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
